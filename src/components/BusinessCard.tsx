@@ -44,10 +44,23 @@ const CircuitLines = () => (
   </svg>
 );
 
-const LightningBolt = () => (
-  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <polygon points="18,2 8,18 16,18 14,30 24,14 16,14" fill="#d97706" />
-  </svg>
+const Logo = () => (
+  <div
+    style={{
+      width: 48,
+      height: 48,
+      borderRadius: "50%",
+      overflow: "hidden",
+      flexShrink: 0,
+      border: "1.5px solid rgba(30,58,95,0.2)",
+    }}
+  >
+    <img
+      src="https://cdn.poehali.dev/files/0189970a-c31c-4592-8fb9-81378555226d.jpg"
+      alt="logo"
+      style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+    />
+  </div>
 );
 
 const BackCircuitLines = () => (
@@ -95,8 +108,8 @@ export const CardFront = () => (
 
     <div className="relative z-10 h-full flex flex-col justify-between p-6">
       <div className="flex items-start justify-between">
-        <div className="flex items-center gap-2">
-          <LightningBolt />
+        <div className="flex items-center gap-2.5">
+          <Logo />
           <div>
             <div className="text-[#d97706] font-oswald text-[8px] tracking-[0.25em] uppercase font-medium leading-tight">
               Электроснабжение
