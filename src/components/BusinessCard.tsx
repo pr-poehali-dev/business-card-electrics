@@ -150,14 +150,14 @@ export const CardBack = () => (
 
     <div className="relative z-10 h-full flex flex-col justify-between p-5">
       <div>
-        <div className="text-[#d97706] font-oswald text-[8px] tracking-[0.3em] uppercase mb-3 font-medium">
+        <div className="text-[#d97706] font-oswald text-[8px] tracking-[0.3em] uppercase mb-2.5 font-medium">
           Сфера деятельности
         </div>
-        <div className="grid grid-cols-2 gap-x-3 gap-y-1.5">
+        <div className="flex flex-col gap-1.5">
           {services.map((s, i) => (
-            <div key={i} className="flex items-start gap-1.5">
-              <div className="w-[3px] h-[3px] rounded-full bg-[#d97706] mt-[5px] flex-shrink-0" />
-              <span className="text-white/90 font-ibm text-[8px] leading-tight font-light">{s}</span>
+            <div key={i} className="flex items-center gap-2">
+              <div className="w-4 h-[1px] bg-[#d97706]/70 flex-shrink-0" />
+              <span className="text-white font-ibm text-[9px] leading-tight font-medium tracking-wide">{s}</span>
             </div>
           ))}
         </div>
