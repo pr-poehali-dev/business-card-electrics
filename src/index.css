@@ -97,5 +97,37 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: "IBM Plex Sans", sans-serif;
   }
+}
+
+.font-oswald {
+  font-family: "Oswald", sans-serif;
+}
+
+.font-ibm {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.card-wrapper {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow:
+    0 0 0 0.5px rgba(245, 158, 11, 0.3),
+    0 20px 60px rgba(0, 0, 0, 0.8),
+    0 0 40px rgba(245, 158, 11, 0.05);
+}
+
+.card-face {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.card-front,
+.card-back {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
